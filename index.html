@@ -3,8 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Sanal's Home Page</title>
+    <style>
+        #style1 {
+            color: green;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <body>
-        <h1>To be updated with fun stuff!</h1>
-    </body>
+<body>
+<h1>HTML and CSS basics</h1>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp; HTML5 Web page: &lt;!DOCTYPE html&gt;</h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp; Language specification: &lt;html lang="en"&gt; </h3>
+
+<h3>Headings</h3>
+<h2>h1 to h6 tags for heading</h2>
+<h3>h5 heading</h3>
+<h6>h6 heading</h6>
+
+<h3>Lists</h3>
+An Ordered List (&lt;ol&gt; tag).
+<ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>
+An Unordered List (&lt;ul&gt; tag).
+<ul>
+    <li>One Item</li>
+    <li>Another Item</li>
+    <li>Yet another item</li>
+</ul>
+Each list item uses &lt;li&gt; tag.
+
+<h3>Image</h3>
+<img src="tesla-cybertruck-official-image.jpg" alt="Tesla CyberTruck" width="2000px">
+With &lt;img src="tesla-cybertruck-official-image.jpg" alt="Tesla CyberTruck" width="2000px" &gt; tag.
+
+<h3>Link</h3>
+The author tag with link. &lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+<a href="https://google.com">Google</a>
+
+<h3>Table</h3>
+Tags for table header: thead, tr and th.
+Tags for table body: tbody, tr and td. <br>
+Style for Table: <br>
+<div class="code">
+    table {
+    border: 5px solid darkblue;
+    border-collapse: collapse;
+    }
+
+    td, th {
+    border: 1px solid black;
+    padding: 5px;
+    }
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Ocean</th>
+            <th>Average Depth</th>
+            <th>Maximum Depth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pacific Ocean</td>
+            <td>4,280 m</td>
+            <td>10,911 m</td>
+        </tr>
+        <tr>
+            <td>Atlantic Ocean</td>
+            <td>3,646 m</td>
+            <td>8,486 m</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Form</h3>
+The &lt;form&gt; element with the following children:
+<ul>
+    <li>&lt;input type="text" placeholder="Full Name" name="name"&gt;</li>
+    <li>&lt;input type="password" placeholder="Password" &gt;</li>
+    <li>&lt;input type="radio" name="color" value="red"&gt; Red</li>
+    <li>&lt;input type="radio" name="color" value="green"&gt; Green</li>
+    <li>&lt;input type="submit"&gt;</li>
+</ul>
+<form>
+    <input type="text" placeholder="Full Name" name="name">
+    <input type="password" placeholder="Password">
+    Favorite color?
+    <input type="radio" name="color" value="red"> Red
+    <input type="radio" name="color" value="green"> Green
+    <input type="submit">
+</form> <br>
+
+A Data list in HTML5.<br>
+&lt;input name="country" list="countries" placeholder="Country"&gt; <br>
+&lt;datalist id="countries"&gt; <br>
+&nbsp;&nbsp;&lt;option value="Australia"/&gt; <br>
+&nbsp;&nbsp;&lt;option value="India"/&gt; <br>
+&nbsp;&nbsp;&lt;option value="USA"/&gt; <br>
+&lt;/datalist&gt; <br>
+<div>
+    <input name="country" list="countries" placeholder="Country">
+    <datalist id="countries">
+        <option value="Australia"/>
+        <option value="India"/>
+        <option value="USA"/>
+    </datalist>
+</div> <br>
+
+<h3>Style</h3>
+&lt;h2 style="color: blue; text-align: center;">Add some style&gt; <br>
+<h2 style="color: blue; text-align: left;">Add some style</h2> <br>
+
+This was added to the head->style element. <br>
+#style1 { <br>
+color: green; <br>
+text-align: right; <br>
+} <br>
+<div id="style1">
+    <h2>Heading number#1 inside the div with id="style1"</h2>
+    <h2>Heading number#2 inside the div with id="style1"</h2>
+</div> <br>
+
+Add a css source file to the head element using the link tag. <br>
+&lt;link rel="stylesheet" href="styles.css"&gt; <br>
+<div id="style2">
+    <h2>Heading number#1 inside the div with id="style2"</h2>
+    <h2>Heading number#2 inside the div with id="style2"</h2>
+</div> <br>
+
+<h3>More Style</h3>
+Control the size of a div using CSS. <br>
+<div class="code">
+#div1 { <br>
+background-color: orange; <br>
+width: 200px; <br>
+height: 200px; <br>
+padding: 20px; <br>
+margin: 20px; <br>
+font-family: "Comic Sans MS"; <br>
+font-weight: bold; <br>
+}
+</div>
+<div id="div1">
+    Hello World!
+</div> <br>
+
+<h3>Even More Style</h3>
+<div class="code">
+#div2 {
+border: 3px solid black;
+font-weight: bold;
+}
+</div>
+<div id="div2">
+    Hello World!
+</div> <br>
+
+<a href="2.html"> CSS styling continued...</a>
+
+</body>
 </html>
