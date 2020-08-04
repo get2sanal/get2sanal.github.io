@@ -3,8 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Styling continued...</title>
+    <style>
+        .code {
+            color: black;
+            font-family: "Courier New";
+            font-size: small;
+        }
+
+        ul  li {
+            color: orange;
+        }
+        /*The previous style is overridden*/
+        ul > li {
+            color: blue;
+        }
+
+        a {
+            color: blue;
+        }
+        a[href="https://facebook.com"] {
+            color: #5a9eff;
+        }
+        a[href="https://amazon.com"] {
+            color: orange;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: green;
+        }
+        button:hover {
+            background-color: orange;
+        }
+    </style>
 </head>
 <body>
+<h2>CSS hierarchical styling</h2>
+<div class="code">
+    ul > li {
+    color: blue;
+    }
+</div>
+<ol>
+    <li>list item one</li>
+    <li>list item two</li>
+    <ul>
+        <li>sublist item one</li>
+        <ul>
+            <li>subsublist item one</li>
+            <li>subsublist item two</li>
+        </ul>
+        <li>sublist item three</li>
+    </ul>
+    <li>list item three</li>
+</ol>
+
+<h2>CSS styling using element attributes</h2>
+<div class="code">
+    a {
+    color: blue;
+    }
+
+    a[href="https://facebook.com"] {
+    color: #5a9eff;
+    }
+
+    a[href="https://amazon.com"] {
+    color: orange;
+    }
+</div>
+<ul>
+    <li><a href="https://google.com">Google</a> </li>
+    <li><a href="https://facebook.com">Facebook</a></li>
+    <li><a href="https://amazon.com">Amazon</a></li>
+</ul>
+
+<h2>CSS button styling and hover</h2>
+<div class="code">
+    button {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: green;
+    }
+    button:hover {
+    background-color: orange;
+    }
+</div>
+<button>Click Me</button> <br><br>
+
+
+<a href="3.html"> CSS styling continued...</a> <br>
+
+
 
 </body>
 </html>
